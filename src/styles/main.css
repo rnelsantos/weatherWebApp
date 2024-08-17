@@ -1,0 +1,68 @@
+
+:root {   /* Var callouts*/
+    --shadow-color: 0deg 0% 52%;
+    --shadow-elevation-medium:
+    0px 0.5px 0.5px hsl(var(--shadow-color) / 0.6),
+    0px 1.3px 1.2px -1.2px hsl(var(--shadow-color) / 0.5),
+    -0.1px 4px 3.8px -2.5px hsl(var(--shadow-color) / 0.4),
+    -0.4px 10.9px 10.2px -3.7px hsl(var(--shadow-color) / 0.3);
+  }
+  
+    
+  
+    /*CSS RESET*/
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    * {
+      margin: 0;
+    }
+    body {
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    img, picture, video, canvas, svg {
+      display: block;
+      max-width: 100%;
+    }
+    input, button, textarea, select {
+      font: inherit;
+    }
+    p, h1, h2, h3, h4, h5, h6 {
+      overflow-wrap: break-word;
+    }
+    #root, #__next {
+      isolation: isolate;
+    }
+  
+    p:focus,
+    input:focus,
+    select:focus,
+    textarea:focus,
+    button:focus {
+      outline: none;
+    }
+  
+  
+/*holy grail format*/
+.wrapper {
+  z-index: 0;
+  display: grid;
+  grid-template-columns:
+    1fr
+    min(65ch, 100%)
+    1fr;
+}
+.wrapper > * {
+  display: grid;
+  grid-column: 2;
+  grid-template-columns: 1fr min(5000px, calc(100% - 70px)) 1fr;
+  
+}
+.full-bleed {
+  width: 100%;
+  grid-column: 1 / -1;
+}
+
+    
+  

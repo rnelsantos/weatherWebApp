@@ -1,0 +1,5 @@
+{
+	"extends": [ "prettier"],
+	"rules": {}
+}
+//npx eslint-config-prettier [name].js  // to check any conflicts between eslint and prettier
