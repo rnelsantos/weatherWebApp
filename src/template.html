@@ -3,11 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script  src="index.js" defer> </script> 
+    <title>WeatherWeb</title>
+
+    
+    <script src="https://kit.fontawesome.com/05237d021a.js" crossorigin="anonymous"></script>
+    <script type="module"  src="index.js" defer> </script>
     <link rel ="stylesheet" href="./styles/main.css">
 </head>
 <body>
+    <header class="header">
+        <i class="fa-solid fa-cloud fa-2x"></i>
+        <div class="head-container" >
+            <h1>WeatherWeb</h1>
+        </div>
+    </header>
+
+   
+
+    <div class="wrapper">
+    <main class="main-container"> 
+        <form action="" data-city-form>
+            <input 
+            data-city-input 
+            class="city-input" 
+            type="text" 
+            placeholder="Enter City Name"
+            />
+            <button city-BTN class="cityBTN">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        
+
+        <div data-displayBox class="displayBox hide">
+            <h1 data-city class="cityName"></h1>
+            <img  data-icon src="#" id="currentIcon">
+            <h2 data-description class="weatherDescription"></h2>
+            <div><i class="fa-solid fa-temperature-three-quarters"></i><p data-temp></p></div>
+            <div><i class="fa-solid fa-temperature-quarter"></i><p data-feelsLike> </p> </div>
+            <div><i class="fa-solid fa-droplet"></i><p data-humidity> </p></div>
+            <div><i class="fa-solid fa-wind"></i><p data-wind> </p></div>
     
+        </div>    
+
+        <div class="gif-container">
+            <img data-gif id="gifWeather" src="#">
+        </div>
+
+
+    </main>    
+    </div>
+
+
+
+
+
+
+
 </body>
 </html>
